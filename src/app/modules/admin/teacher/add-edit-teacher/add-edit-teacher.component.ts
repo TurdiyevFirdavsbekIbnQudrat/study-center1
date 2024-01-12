@@ -26,6 +26,15 @@ constructor(private fb:FormBuilder,private $teachers:TeacherService) {
 }
 
 add(){
+  if(this.form.invalid){
+    Object.values(this.form.controls).forEach(control => {
+      if (control.invalid) {
+        control.markAsDirty();
+        control.updateValueAndValidity({ onlySelf: true });
+      }
+    });
+    return;
+  }
   const request = this.form.getRawValue();
   this.$teachers.createTeacher(request).subscribe({
     next:()=>{alert(`qo'shildi`)},

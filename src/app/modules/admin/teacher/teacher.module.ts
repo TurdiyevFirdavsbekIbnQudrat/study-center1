@@ -11,6 +11,7 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzInputModule} from 'ng-zorro-antd/input';
+
 @NgModule({
   declarations: [
     TeacherComponent,
@@ -27,7 +28,8 @@ import { NzInputModule} from 'ng-zorro-antd/input';
     NzDividerModule,
     NzButtonModule,
     NzIconModule,
-    NzInputModule
+    NzInputModule,
+    
   ]
 })
 export class TeacherModule { }
