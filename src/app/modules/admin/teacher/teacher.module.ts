@@ -8,7 +8,9 @@ import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { NzFormModule } from 'ng-zorro-antd/form';
+import { NzInputModule} from 'ng-zorro-antd/input';
 @NgModule({
   declarations: [
     TeacherComponent,
@@ -18,10 +20,14 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
   imports: [
     CommonModule,
     TeacherRoutingModule,
+    ReactiveFormsModule,
+
+    NzFormModule,
     NzTableModule,
     NzDividerModule,
     NzButtonModule,
-    NzIconModule
+    NzIconModule,
+    NzInputModule
   ]
 })
 export class TeacherModule { }

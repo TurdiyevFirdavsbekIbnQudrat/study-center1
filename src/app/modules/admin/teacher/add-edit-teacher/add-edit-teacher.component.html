@@ -1,1 +1,107 @@
-<p>add-edit-teacher works!</p>
+
+<h3 class = "title"><span [routerLink]="['../']" nz-icon nzType="arrow-left" nzTheme="outline"></span>Add teacher</h3>
+<form [formGroup]="form" nz-form>
+    <!-- Name -->
+    <nz-form-item>
+        <nz-form-label [nzSpan]="6" nzFor="name">Name</nz-form-label>
+        <nz-form-control [nzSpan]="14">
+          <input nz-input 
+          name="name" 
+          formControlName="name"
+          type="text" 
+          id="name">
+        </nz-form-control>
+      </nz-form-item >
+      <!-- Description -->
+      <nz-form-item>
+        <nz-form-label [nzSpan]="6" nzFor="description">Description</nz-form-label>
+        <nz-form-control [nzSpan]="14">
+          <input nz-input 
+          name="description" 
+          formControlName="description"
+          type="text" 
+          id="description">
+        </nz-form-control>
+      </nz-form-item >
+      <!-- Address -->
+      <nz-form-item>
+        <nz-form-label [nzSpan]="6" nzFor="address">Address</nz-form-label>
+        <nz-form-control [nzSpan]="14">
+          <input nz-input 
+          name="address" 
+          formControlName="address"
+          type="text" 
+          id="address">
+        </nz-form-control>
+      </nz-form-item >
+      <!-- Date OF Birth -->
+      <nz-form-item>
+        <nz-form-label [nzSpan]="6" nzFor="dateOfBirth">Date Of Birth</nz-form-label>
+        <nz-form-control [nzSpan]="14">
+          <input nz-input 
+          name="dateOfBirth" 
+          formControlName="dateOfBirth"
+          type="text" 
+          id="dateOfBirth">
+        </nz-form-control>
+      </nz-form-item >
+      <!-- Date of registr -->
+      <nz-form-item>
+        <nz-form-label [nzSpan]="6" nzFor="dateOfRegister">Date Of Registr</nz-form-label>
+        <nz-form-control [nzSpan]="14">
+          <input nz-input 
+          name="dateOfRegister" 
+          formControlName="dateOfRegister"
+          type="text" 
+          id="dateOfRegister">
+        </nz-form-control>
+      </nz-form-item >
+      <!-- phone -->
+      <nz-form-item>
+        <nz-form-label [nzSpan]="6" nzFor="phone">Phone number</nz-form-label>
+        <nz-form-control [nzSpan]="14">
+          <input nz-input 
+          name="phone" 
+          formControlName="phone"
+          type="text" 
+          id="phone">
+        </nz-form-control>
+      </nz-form-item >
+      <!-- email -->
+      <nz-form-item>
+        <nz-form-label [nzSpan]="6" nzFor="email">Email</nz-form-label>
+        <nz-form-control [nzSpan]="14">
+          <input nz-input 
+          name="email"
+          formControlName="email"
+          type="email" 
+          id="email">
+        </nz-form-control>
+      </nz-form-item >
+       <!-- telegramUserName -->
+       <nz-form-item>
+        <nz-form-label [nzSpan]="6" nzFor="telegramUserName">Telegram User Name</nz-form-label>
+        <nz-form-control [nzSpan]="14">
+          <input nz-input 
+          name="telegramUserName"
+          formControlName="telegramUserName"
+          type="text" 
+          id="telegramUserName">
+        </nz-form-control>
+      </nz-form-item >
+      <!-- specialization -->
+      <nz-form-item>
+       <nz-form-label [nzSpan]="6" nzFor="specialization">Specialization</nz-form-label>
+       <nz-form-control [nzSpan]="14">
+         <input nz-input 
+         name="specialization"
+         formControlName="specialization"
+         type="text" 
+         id="specialization">
+       </nz-form-control>
+     </nz-form-item >
+     <div class="addButton gap-1 justify-content-end">
+     <button nz-button  nzType="primary" (click)="add()">Add</button>
+     <button nz-button >Clear</button>
+     </div>
+ </form>   

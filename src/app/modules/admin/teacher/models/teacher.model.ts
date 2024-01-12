@@ -5,8 +5,8 @@ export interface TeacherResponse
     name: string;
     description: string;
     address: string;
-    dateOfBirth: Date;
-    dateOfRegister: Date;
+    dateOfBirth: string;
+    dateOfRegister: string;
     phone: string;
     email: string;
     telegramUserName: string;
@@ -15,5 +15,13 @@ export interface TeacherResponse
 }
 export interface TeacherRequest
 {
-
+    name: string;
+    description: string;
+    address: string;
+    dateOfBirth:string;
+    dateOfRegister: string;
+    phone: string;
+    email: string;
+    telegramUserName: string;
+    specialization: string;
 }

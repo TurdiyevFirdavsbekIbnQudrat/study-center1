@@ -18,9 +18,14 @@
   }
 
   .inner-content {
+    
+    
     padding: 24px;
     background: #fff;
-    min-height: 360px;
+    /* //min-height: 360px; */
+    
+    height: 94%;
+    overflow: scroll;
   }
   
   nz-footer {

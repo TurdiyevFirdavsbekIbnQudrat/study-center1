@@ -46,7 +46,7 @@ export class TeacherListComponent implements OnInit{
         next:(response)=>{
           this.teachers=response
           // console.log(this.teachers)
-          alert("Malumotlar olib kelindi")
+          // alert("Malumotlar olib kelindi")
         },
         error:(err)=>{
           alert("nimadir xato")

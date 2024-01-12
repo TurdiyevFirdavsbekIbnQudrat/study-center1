@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { TeacherResponse } from '../models/teacher.model';
+import { TeacherRequest, TeacherResponse } from '../models/teacher.model';
 
 @Injectable({
   providedIn: 'root'
@@ -12,4 +12,8 @@ export class TeacherService {
 getAll(){
   return this.http.get<TeacherResponse[]>(this.baseUrl+'GetAll')
 }
+
+createTeacher(model:TeacherRequest){
+  return this.http.post<TeacherResponse>(this.baseUrl+'CreateTeacher',model);
 }
+} 
